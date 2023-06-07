@@ -11,7 +11,6 @@ tanzu apps workload create mybankapp \
 
   tanzu apps workload create mybankapp \
   --git-branch main \
-  --sub-path mybankapp \
   --git-repo https://github.com/PradeepLoganathan/MyBank.git \
   --label apps.tanzu.vmware.com/has-tests=true \
   --label apps.tanzu.vmware.com/language=dotnet \

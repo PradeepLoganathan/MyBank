@@ -1,0 +1,44 @@
+/* MenuBar.razor.css */
+
+.menu-bar-container {
+    background-color: #f8f8f8;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-bar-container .menu-button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-bar-container .hamburger-icon {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.menu-bar-container .menu {
+    display: block;
+}
+
+.menu-bar-container .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar-container .menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu-bar-container .menu ul li a {
+    text-decoration: none;
+    color: #333;
+}

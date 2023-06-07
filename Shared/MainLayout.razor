@@ -1,19 +1,38 @@
-﻿@inherits LayoutComponentBase
+<!-- MainLayout.razor -->
 
-<PageTitle>MyBankApp</PageTitle>
+@inherits LayoutComponentBase
 
-<div class="page">
-    @* <div class="sidebar">
-        <NavMenu />
-    </div> *@
+<div class="page-container">
+    <header>
+        <!-- Your header content here -->
+    </header>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
+    <div class="content-container">
+        <MenuBar />
 
-        <article class="content px-4">
+        <div class="main-content">
             @Body
-        </article>
-    </main>
+        </div>
+    </div>
+
+    <footer>
+        <Footer />
+    </footer>
 </div>
+
+<style>
+    /* Global styles for MainLayout */
+    .page-container {
+        /* Set the overall layout styles for the page */
+    }
+
+    .content-container {
+        /* Set the styles for the content area */
+    }
+
+    .main-content {
+        /* Set the styles for the main content area */
+    }
+
+    /* Additional styling for header and footer if needed */
+</style>

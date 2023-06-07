@@ -1,0 +1,35 @@
+<!-- Login.razor -->
+
+@page "/login"
+@using System.Security.Claims
+
+<div class="login-container">
+    <h3>Login</h3>
+
+    <div class="form-group">
+        <label for="userId">User ID</label>
+        <input type="text" id="userId" />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+    </div>
+
+    <div class="form-group remember-me">
+        <input type="checkbox" id="rememberMe" />
+        <label for="rememberMe">Remember Me</label>
+    </div>
+
+    <button class="login-button" @onclick="DoLogin">Login</button>
+</div>
+
+@code {
+    private void DoLogin()
+    {
+        // Perform login logic here
+    }
+}
+
+<!-- Link the CSS file -->
+<link href="./Login.razor.css" rel="stylesheet" />

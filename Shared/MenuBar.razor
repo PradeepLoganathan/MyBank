@@ -1,0 +1,21 @@
+<!-- MenuBar.razor -->
+
+<div class="menu-bar-container">
+    <input type="checkbox" id="menu-toggle" @bind="isMenuOpen" />
+    <label for="menu-toggle" class="menu-button">
+        <span class="hamburger-icon"></span>
+    </label>
+
+    <nav class="menu" style="display: @(isMenuOpen ? "block" : "none")">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+@code {
+    private bool isMenuOpen = false;
+}
