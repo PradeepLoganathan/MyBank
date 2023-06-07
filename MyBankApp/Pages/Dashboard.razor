@@ -1,0 +1,38 @@
+@page "/dashboard"
+@inherits LayoutComponentBase
+
+<div class="container">
+    <h1>Dashboard</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Account</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var account in accounts)
+            {
+                <tr>
+                    <td>@account.Name</td>
+                    <td>@account.Balance</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<Account> accounts; // Replace 'Account' with your actual account model or class
+
+    protected override void OnInitialized()
+    {
+        // Simulated data for demonstration purposes
+        accounts = new List<Account>
+        {
+            new Account { Name = "Savings Account", Balance = 1000 },
+            new Account { Name = "Checking Account", Balance = 500 },
+            new Account { Name = "Investment Account", Balance = 5000 }
+        };
+    }
+}
